@@ -4,7 +4,7 @@
 #include <iterator>
 using namespace std;
 
-int factorial(int number);
+int reverse(int number);
 
 int main()
 {
@@ -21,16 +21,16 @@ int main()
 		if (eos != inputStream)
 			value2 = *inputStream;
 
-		revValue1 = factorial(value1);
-		revValue2 = factorial(value2);
+		revValue1 = reverse(value1);
+		revValue2 = reverse(value2);
 		sum = revValue1 + revValue2;
-		revSum = factorial(sum);
+		revSum = reverse(sum);
 		cout << revSum << "\n";
 	}
 	return 0;
 }
 
-int factorial(int number)
+int reverse(int number)
 {
 	int sum = 0, remainder;
 	
